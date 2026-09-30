@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.ListDatosTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:form styleClass="jsfcrud_list_form">
+                <h:panelGroup id="messagePanel" layout="block">
+                    <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+                </h:panelGroup>
+                <h:outputText escape="false" value="#{bundle.ListDatosEmpty}" rendered="#{datosController.items.rowCount == 0}"/>
+                <h:panelGroup rendered="#{datosController.items.rowCount > 0}">
+                    <h:outputText value="#{datosController.pagination.pageFirstItem + 1}..#{datosController.pagination.pageLastItem + 1}/#{datosController.pagination.itemsCount}"/>&nbsp;
+                    <h:commandLink action="#{datosController.previous}" value="#{bundle.Previous} #{datosController.pagination.pageSize}" rendered="#{datosController.pagination.hasPreviousPage}"/>&nbsp;
+                    <h:commandLink action="#{datosController.next}" value="#{bundle.Next} #{datosController.pagination.pageSize}" rendered="#{datosController.pagination.hasNextPage}"/>&nbsp;
+                    <h:dataTable value="#{datosController.items}" var="item" border="0" cellpadding="2" cellspacing="0" rowClasses="jsfcrud_odd_row,jsfcrud_even_row" rules="all" style="border:solid 1px">
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListDatosTitle_id}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.id}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListDatosTitle_nombre}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.nombre}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListDatosTitle_apellidos}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.apellidos}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListDatosTitle_tipoDeDocumento}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.tipoDeDocumento}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListDatosTitle_numeroDeDocumento}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.numeroDeDocumento}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListDatosTitle_ocupacion}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.ocupacion}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListDatosTitle_departamento}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.departamento}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListDatosTitle_ciudad}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.ciudad}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListDatosTitle_edad}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.edad}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListDatosTitle_fchaDeSolicitud}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.fchaDeSolicitud}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListDatosTitle_direccion}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.direccion}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListDatosTitle_telefono}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.telefono}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="&nbsp;"/>
+                            </f:facet>
+                            <h:commandLink action="#{datosController.prepareView}" value="#{bundle.ListDatosViewLink}"/>
+                            <h:outputText value=" "/>
+                            <h:commandLink action="#{datosController.prepareEdit}" value="#{bundle.ListDatosEditLink}"/>
+                            <h:outputText value=" "/>
+                            <h:commandLink action="#{datosController.destroy}" value="#{bundle.ListDatosDestroyLink}"/>
+                        </h:column>
+                    </h:dataTable>
+                </h:panelGroup>
+                <br />
+                <h:commandLink action="#{datosController.prepareCreate}" value="#{bundle.ListDatosCreateLink}"/>
+                <br />
+                <br />
+                <h:link outcome="/index" value="#{bundle.ListDatosIndexLink}"/>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

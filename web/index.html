@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>BANKALL</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+             
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <i class="fas fa-laugh-wink"></i>
+                 
+                </div>
+                <div class="sidebar-brand-text mx-3">BIENVENIDO A TU BANCO AMIGO <sup></sup></div>
+            </a>
+          
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>BANKALL</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                SOLICITUD
+            </div>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                
+               
+            </li>
+
+            <!-- Nav Item - Utilities Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+                    aria-expanded="true" aria-controls="collapseUtilities">
+                    <i class="fas fa-fw fa-wrench"></i>
+                    <span>CLIENTES</span>
+                </a>
+                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">COMPONENTES :</h6>
+                        <a class="collapse-item" href="utilities-color.html">ALTAS DE CLIENTES</a>
+                        <a class="collapse-item" href="utilities-border.html">VER CLIENTES</a>
+                        <a class="collapse-item" href="utilities-animation.html">ELIMINAR CLIENTES</a>
+                        <a class="collapse-item" href="utilities-other.html">EDITAR CLIENTES</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                PRSTAMOS
+            </div>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
+                    aria-expanded="true" aria-controls="collapsePages">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Pages</span>
+                </a>
+                <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Login Screens:</h6>
+                        <a class="collapse-item" href="login.html">Login</a>
+                        <a class="collapse-item" href="register.html">Register</a>
+                        <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
+                        <div class="collapse-divider"></div>
+                        <h6 class="collapse-header">Other Pages:</h6>
+                        <a class="collapse-item" href="404.html">404 Page</a>
+                        <a class="collapse-item" href="blank.html">Blank Page</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Nav Item - Charts -->
+            <li class="nav-item">
+                <a class="nav-link" href="charts.html">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Charts</span></a>
+            </li>
+
+            <!-- Nav Item - Tables -->
+            <li class="nav-item">
+                <a class="nav-link" href="tables.html">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Tables</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+            
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+                
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <!-- Topbar Search -->
+                    <form
+                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+                                aria-label="Search" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fas fa-search fa-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+
+                        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                        <li class="nav-item dropdown no-arrow d-sm-none">
+                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-search fa-fw"></i>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                                aria-labelledby="searchDropdown">
+                                <form class="form-inline mr-auto w-100 navbar-search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control bg-light border-0 small"
+                                            placeholder="Search for..." aria-label="Search"
+                                            aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="button">
+                                                <i class="fas fa-search fa-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+
+                        <!-- Nav Item - Alerts -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-bell fa-fw"></i>
+                                <!-- Counter - Alerts -->
+                                <span class="badge badge-danger badge-counter">3+</span>
+                            </a>
+                            <!-- Dropdown - Alerts -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="alertsDropdown">
+                                <h6 class="dropdown-header">
+                                    Alerts Center
+                                </h6>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-primary">
+                                            <i class="fas fa-file-alt text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">December 12, 2019</div>
+                                        <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-success">
+                                            <i class="fas fa-donate text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">December 7, 2019</div>
+                                        $290.29 has been deposited into your account!
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-warning">
+                                            <i class="fas fa-exclamation-triangle text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">December 2, 2019</div>
+                                        Spending Alert: We've noticed unusually high spending for your account.
+                                    </div>
+                                </a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                            </div>
+                        </li>
+
+                        <!-- Nav Item - Messages -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-envelope fa-fw"></i>
+                                <!-- Counter - Messages -->
+                                <span class="badge badge-danger badge-counter">7</span>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="messagesDropdown">
+                                <h6 class="dropdown-header">
+                                    Message Center
+                                </h6>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="img/undraw_profile_1.svg"
+                                            alt="...">
+                                        <div class="status-indicator bg-success"></div>
+                                    </div>
+                                    <div class="font-weight-bold">
+                                        <div class="text-truncate">Hi there! I am wondering if you can help me with a
+                                            problem I've been having.</div>
+                                        <div class="small text-gray-500">Emily Fowler · 58m</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="img/undraw_profile_2.svg"
+                                            alt="...">
+                                        <div class="status-indicator"></div>
+                                    </div>
+                                    <div>
+                                        <div class="text-truncate">I have the photos that you ordered last month, how
+                                            would you like them sent to you?</div>
+                                        <div class="small text-gray-500">Jae Chun · 1d</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="img/undraw_profile_3.svg"
+                                            alt="...">
+                                        <div class="status-indicator bg-warning"></div>
+                                    </div>
+                                    <div>
+                                        <div class="text-truncate">Last month's report looks great, I am very happy with
+                                            the progress so far, keep up the good work!</div>
+                                        <div class="small text-gray-500">Morgan Alvarez · 2d</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60"
+                                            alt="...">
+                                        <div class="status-indicator bg-success"></div>
+                                    </div>
+                                    <div>
+                                        <div class="text-truncate">Am I a good boy? The reason I ask is because someone
+                                            told me that people say this to all dogs, even if they aren't good...</div>
+                                        <div class="small text-gray-500">Chicken the Dog · 2w</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
+                            </div>
+                        </li>
+
+                        <div class="topbar-divider d-none d-sm-block"></div>
+
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">ACCESO CLIENTE</span>
+                                <img class="img-profile rounded-circle"
+                                    src="img/undraw_profile.svg">
+                            </a>
+                            <!-- Dropdown - User Information -->
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                      Inicio
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Prestamos
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                                   
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Cerrar Sesion
+                                </a>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800">BUSCAS UNA TARJETA DE CREDITO? Encuentrala Ahora!!!!!</h1>
+                        
+                       
+                    </div>
+
+                    <!-- Content Row -->
+                    <div class="row">
+                    
+               
+                        <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-success shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                                TARJETA ECASH</div>
+                                       <img class="sidebar-card-illustration mb-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdBIS0jbrDKIIfnvxsaz6LdHB8046RrUSJ506d16SwuufL8z_mLk_2S158lsl2ooPS4UA&usqp=CAU" alt="...">       
+
+                                           
+
+                                        </div>
+                                        <div class="col-auto">
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-info shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">TARJETA CLASSICA RESOLVING
+                                                                      <img class="sidebar-card-illustration mb-2" src="data:image/jpeg;base64,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" alt="...">       
+
+                                            </div>
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col-auto">
+                                                    
+                                                </div>
+                                                <div class="col">
+                                                    <div class="progress progress-sm mr-2">
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pending Requests Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-warning shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                                                AMERICAN EXPRESS</div>
+                               <img class="sidebar-card-illustration mb-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1Z2FK7NKrbLfZH6JnYRoNDUe4B55id2hY8Q&usqp=CAU" alt="...">       
+
+                                           
+                                        </div>
+                                        <div class="col-auto">
+                                           
+                                           
+                                       
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+<img class="sidebar-card-illustration mb-2" src="https://www.mastercard.es/content/dam/public/mastercardcom/eu/es/images/Consumidores/escoge-tu-tarjeta/woman-smiling-with-friends-1300x650.jpg" alt="...">
+                    <!-- Content Row -->
+
+                    <div class="row">
+
+                        <!-- Area Chart -->
+                        <div class="col-xl-8 col-lg-7">
+                            <div class="card shadow mb-4">
+                                <!-- Card Header - Dropdown -->
+                                
+                                    </div>
+                                </div>
+                        
+                                
+                            </div>
+                        </div>  
+                                <!-- Card Body -->
+                              
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Content Row -->
+                    <div class="row">
+
+                        <!-- Content Column -->
+                        <div class="col-lg-6 mb-4">
+
+                            <!-- Project Card Example -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Projects</h6>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="small font-weight-bold">Server Migration <span
+                                            class="float-right">20%</span></h4>
+                                    <div class="progress mb-4">
+                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 20%"
+                                            aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <h4 class="small font-weight-bold">Sales Tracking <span
+                                            class="float-right">40%</span></h4>
+                                    <div class="progress mb-4">
+                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 40%"
+                                            aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <h4 class="small font-weight-bold">Customer Database <span
+                                            class="float-right">60%</span></h4>
+                                    <div class="progress mb-4">
+                                        <div class="progress-bar" role="progressbar" style="width: 60%"
+                                            aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <h4 class="small font-weight-bold">Payout Details <span
+                                            class="float-right">80%</span></h4>
+                                    <div class="progress mb-4">
+                                        <div class="progress-bar bg-info" role="progressbar" style="width: 80%"
+                                            aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <h4 class="small font-weight-bold">Account Setup <span
+                                            class="float-right">Complete!</span></h4>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-success" role="progressbar" style="width: 100%"
+                                            aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                 
+                                    </div>
+                                </div>
+                                
+                                           
+                                            <div class="text-white-50 small">#5a5c69</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-6 mb-4">
+
+                            <!-- Illustrations -->
+                           
+
+                            <!-- Approach -->
+                            
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; Your Website 2021</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="login.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-pie-demo.js"></script>
+
+</body>
+
+</html>
